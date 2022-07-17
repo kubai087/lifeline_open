@@ -1,0 +1,125 @@
+/* discover */
+.s1,.s2,.s3{
+    position: relative;
+  }
+  .s2 .btns{
+    position: absolute;
+    top: calc(75%);
+    left: 50%;
+    transform: translateX(16px);
+  }
+  .s2 .btns .my-button2{
+    margin-left: 60px;
+  }
+  .s3 .btns{
+    position: absolute;
+    top: calc(75% - 0px);
+    left: 45%;
+    transform: translateX(160px);
+  }
+  .s3 .btns .my-button2{
+    margin-left: 60px;
+  }
+  .s4 .btns{
+    position: absolute;
+    top: calc(75%);
+    left: 50%;
+    transform: translateX(25px);
+  }
+  .s4 .btns .my-button2{
+    margin-left: 60px;
+  }
+  .modal .btns{
+    position: absolute;
+    left: calc(50% + 20px);
+    top: 42px;
+    transform: translateX(0);
+  }
+  .my-button3 {
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+    background: #CE3452;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+.my-button4 {
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+    background: #CE3452;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+    margin-left:10px;
+    vertical-align: top;
+}
+.my-button3:hover {
+    background: #77bac6;
+}
+.my-button4:hover {
+    background: #77bac6;
+}
+
+.my-button3 i{
+    font-size: 2rem;
+}
+.my-button4 i{
+    font-size: 1.5rem;
+}
+
+.imgModal{
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: #89BEC6;
+  z-index: 9999;
+  display: none;
+}
+.imgModal .back{
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 32px;
+  color: #2A5F6A;
+  border: 2px solid #2A5F6A;
+}
+.imgModal .container{
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  font-size: 22px;
+  line-height: 36px;
+  text-align: center;
+}
+.imgModal .container .img{
+  width: 100%;
+}
+.imgModal .container .img img{
+  width: 100%;
+  margin: 20px 0;
+}
+.light-color{
+  color: #4EA6B6;
+}
+.imgModal .container .tip p{
+  font-size: 18px !important;
+  line-height: 20px;
+}
+.imgModal .container span{
+  background: transparent !important;
+}
