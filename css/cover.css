@@ -73,7 +73,7 @@
     font-size: 1.5rem;
 }
 
-.imgModal{
+.sModal{
   position: fixed;
   left: 0;
   top: 0;
@@ -83,7 +83,7 @@
   z-index: 9999;
   display: none;
 }
-.imgModal .back{
+.sModal .back{
   position: absolute;
   left: 20px;
   top: 20px;
@@ -95,7 +95,7 @@
   color: #2A5F6A;
   border: 2px solid #2A5F6A;
 }
-.imgModal .container{
+.sModal .container{
   width: 500px;
   height: 500px;
   position: absolute;
@@ -106,20 +106,20 @@
   line-height: 36px;
   text-align: center;
 }
-.imgModal .container .img{
+.sModal .container .img{
   width: 100%;
 }
-.imgModal .container .img img{
+.sModal .container .img img{
   width: 100%;
   margin: 20px 0;
 }
 .light-color{
   color: #4EA6B6;
 }
-.imgModal .container .tip p{
+.sModal .container .tip p{
   font-size: 18px !important;
   line-height: 20px;
 }
-.imgModal .container span{
+.sModal .container span{
   background: transparent !important;
 }

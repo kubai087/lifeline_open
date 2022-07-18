@@ -54,12 +54,15 @@
               <object type="image/svg+xml" data="img/jiangtun.svg"></object>
               <div class="btns">
                 <button class="my-button" onclick="document.getElementById('sound1').play();"><i class="bi bi-soundwave"></i></button>
-                <button class="my-button2" id="s2Img"><i class="bi bi-image-fill"></i></button>
+                <button class="my-button2 sModalBtn" data-id="s2Modal"><i class="bi bi-image-fill"></i></button>
               </div>
             </div>
           </div>
           <div id="div1" class="col">
             <audio id="sound1" src="sound/江豚.mp3" preload="auto"></audio>
+          </div>
+          <div class="col">
+            <img id="girlImg1" src="img/江豚.png" style="display:none;" alt="">
           </div>
         </div>
         <!--
@@ -75,7 +78,7 @@
           <div class="wave"></div>
         </div>
         <div class="button-container1 left high">
-          <a href="https://www.kubai.design/lifeline/">
+          <a href="https://www.kubai.design/lifeline/" target="_blank">
             <div class="button round">
               <i class="bi bi-house-door-fill" aria-hidden="true"></i>
             </div>
@@ -108,7 +111,7 @@
                   <object type="image/svg+xml" data="img/jiangtun.svg"></object>
                   <div class="btns high">
                     <button class="my-button3" onclick="document.getElementById('sound1').play();"><i class="bi bi-soundwave"></i></button>
-                    <button class="my-button4"><i class="bi bi-image-fill"></i></button>
+                    <button class="my-button4" onclick="downloadImg1()"><i class="bi bi-image-fill"></i></button>
                   </div>
                 </div>
               </div>
@@ -134,7 +137,7 @@
               <object type="image/svg+xml" data="img/zhonghuachuanshanjia.svg"></object>
               <div class="btns high">
                 <button class="my-button" onclick="document.getElementById('sound2').play();"><i class="bi bi-soundwave"></i></button>
-                <button class="my-button2" id="s2Img"><i class="bi bi-image-fill"></i></button>
+                <button class="my-button2 sModalBtn"  data-id="s3Modal"><i class="bi bi-image-fill"></i></button>
               </div>
             </div>
           </div>
@@ -151,7 +154,7 @@
           <div class="wave"></div>
         </div>
         <div class="button-container1 left high">
-          <a href="https://www.kubai.design/lifeline/">
+          <a href="https://www.kubai.design/lifeline/" target="_blank">
             <div class="button round">
               <i class="bi bi-house-door-fill" aria-hidden="true"></i>
             </div>
@@ -184,7 +187,7 @@
                   <object type="image/svg+xml" id="chuanghshanjiang" data="img/zhonghuachuanshanjia.svg"></object>
                   <div class="btns high">
                     <button class="my-button3" onclick="document.getElementById('sound2').play();"><i class="bi bi-soundwave"></i></button>
-                    <button class="my-button4" onclick="downloadImg()"><i class="bi bi-image-fill"></i></button>
+                    <button class="my-button4" onclick="downloadImg2()"><i class="bi bi-image-fill"></i></button>
                   </div>
                 </div>
               </div>
@@ -209,7 +212,7 @@
               <object type="image/svg+xml" data="img/zhuhuan.svg"></object>
               <div class="btns">
                 <button class="my-button" onclick="document.getElementById('sound3').play();"><i class="bi bi-soundwave"></i></button>
-                <button class="my-button2" onclick="downloadImg()"><i class="bi bi-image-fill"></i></button>
+                <button class="my-button2 sModalBtn"  data-id="s4Modal"><i class="bi bi-image-fill"></i></button>
               </div>
             </div>
           </div>
@@ -217,7 +220,7 @@
             <audio id="sound3" src="sound/朱鹮.mp3" preload="auto"></audio>
           </div>
           <div class="col">
-            <img id="girlImg" src="img/朱鹮.png" style="display:none;" alt="">
+            <img id="girlImg3" src="img/朱鹮.png" style="display:none;" alt="">
           </div>
         </div>
         <div class="ocean">
@@ -226,7 +229,7 @@
           <div class="wave"></div>
         </div>
         <div class="button-container1 left high">
-          <a href="https://www.kubai.design/lifeline/">
+          <a href="https://www.kubai.design/lifeline/" target="_blank">
             <div class="button round">
               <i class="bi bi-house-door-fill" aria-hidden="true"></i>
             </div>
@@ -259,46 +262,95 @@
                   <object type="image/svg+xml" id="zhuhuan" data="img/zhuhuan.svg"></object>
                   <div class="btns high">
                     <button class="my-button3" onclick="document.getElementById('sound3').play();"><i class="bi bi-soundwave"></i></button>
-                    <button class="my-button4" onclick="downloadImg()"><i class="bi bi-image-fill"></i></button>
+                    <button class="my-button4" onclick="downloadImg3()"><i class="bi bi-image-fill"></i></button>
                   </div>
                 </div>
               </div>
               <p>学名：Nipponia nippon，鹳形目、鹮科的鸟类动物，体长68-79厘米，体重1.4-1.8千克。中等体型，体羽白色，后枕部有长的柳叶形羽冠，额至面颊部皮肤裸露，呈鲜红色。寿命最长纪录为37年。</p>
             </div>
             <div class="chart2">
-              <div id="curve_chart" style="width: 360px; height: 220px;"></div>
+              <div id="curve_chart" style="width: 350px; height: 200px;"></div>
             </div>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="imgModal">
+    <div class="s2Modal sModal" style="background-color: #e7f4f6；">
         <span class="back">←</span>
         <div class="container">
           <b>下载壁纸，</b>
-          <div><b>给<span onclick="downloadImg()" class="light-color">江豚</span>一个数字家园</b></div>
+          <div><b>给<span onclick="downloadImg1()" class="light-color">江豚</span>一个数字家园</b></div>
           <div class="img"><img src="img/江豚.png" /></div>
           <div class="tip">
-            <p id="bizhi" onclick="downloadImg()"><span>PC/MAC</span>   2560*1440</p>
+            <p id="bizhi" onclick="downloadImg1()"><span>PC/MAC</span>   2560*1440</p>
             <P id="line">─────────────────────────────────────</p>
-            <p id="bizhi" onclick="downloadImg()"><span>手机/iPhone</span>   1170*2532</p>
+            <p id="bizhi" onclick="downloadImg1()"><span>手机/iPhone</span>   1170*2532</p>
             <P id="line">─────────────────────────────────────</p>
-            <p id="bizhi" onclick="downloadImg()"><span>平板电脑/Ipad</span>   2388*1638</p>
+            <p id="bizhi" onclick="downloadImg1()"><span>平板电脑/Ipad</span>   2388*1638</p>
           </div>
         </div>
     </div>
+    <div class="s3Modal sModal" style="background-color: #f8dbd9;">
+      <span class="back">←</span>
+      <div class="container">
+        <b>下载壁纸，</b>
+        <div><b>给<span onclick="downloadImg2()" class="light-color">中华穿山甲</span>一个数字家园</b></div>
+        <div class="img"><img src="img/穿山甲.png" /></div>
+        <div class="tip">
+          <p id="bizhi2" onclick="downloadImg2()"><span>PC/MAC</span>   2560*1440</p>
+          <P id="line">─────────────────────────────────────</p>
+          <p id="bizhi2" onclick="downloadImg2()"><span>手机/iPhone</span>   1170*2532</p>
+          <P id="line">─────────────────────────────────────</p>
+          <p id="bizhi2" onclick="downloadImg2()"><span>平板电脑/Ipad</span>   2388*1638</p>
+        </div>
+      </div>
+  </div>
+  <div class="s4Modal sModal" style="background-color: #cfe9ee;">
+    <span class="back">←</span>
+    <div class="container">
+      <b>下载壁纸，</b>
+      <div><b>给<span onclick="downloadImg3()" class="light-color">朱鹮</span>一个数字家园</b></div>
+      <div class="img"><img src="img/朱鹮.png" /></div>
+      <div class="tip">
+        <p id="bizhi3" onclick="downloadImg3()"><span>PC/MAC</span>   2560*1440</p>
+        <P id="line">─────────────────────────────────────</p>
+        <p id="bizhi3" onclick="downloadImg3()"><span>手机/iPhone</span>   1170*2532</p>
+        <P id="line">─────────────────────────────────────</p>
+        <p id="bizhi3" onclick="downloadImg3()"><span>平板电脑/Ipad</span>   2388*1638</p>
+      </div>
+    </div>
+</div>
 
+    <!-- 下载图片JS -->
     <script>
-        function downloadImg(){
-        var img = document.getElementById('girlImg'); // 获取要下载的图片
+        function downloadImg1(){
+        var img = document.getElementById('girlImg1'); // 获取要下载的图片
         var url = img.src;                            // 获取图片地址
         var a = document.createElement('a');          // 创建一个a节点插入的document
         var event = new MouseEvent('click')           // 模拟鼠标click点击事件
-        a.download = 'beautifulGirl'                  // 设置a节点的download属性值
+        a.download = 'jiangtun'                  // 设置a节点的download属性值
         a.href = url;                                 // 将图片的src赋值给a节点的href
         a.dispatchEvent(event)                        // 触发鼠标点击事件
      }
+       function downloadImg2(){
+       var img = document.getElementById('girlImg2'); // 获取要下载的图片
+       var url = img.src;                            // 获取图片地址
+       var a = document.createElement('a');          // 创建一个a节点插入的document
+       var event = new MouseEvent('click')           // 模拟鼠标click点击事件
+       a.download = 'chuanghshanjiang'                  // 设置a节点的download属性值
+       a.href = url;                                 // 将图片的src赋值给a节点的href
+       a.dispatchEvent(event)                        // 触发鼠标点击事件
+    }
+       function downloadImg3(){
+       var img = document.getElementById('girlImg3'); // 获取要下载的图片
+       var url = img.src;                            // 获取图片地址
+       var a = document.createElement('a');          // 创建一个a节点插入的document
+       var event = new MouseEvent('click')           // 模拟鼠标click点击事件
+       a.download = 'zhuhuan'                  // 设置a节点的download属性值
+       a.href = url;                                 // 将图片的src赋值给a节点的href
+       a.dispatchEvent(event)                        // 触发鼠标点击事件
+    }
      </script>
     <!-- 模态框挡住按钮的bug解决 -->
     <script>
@@ -423,11 +475,12 @@
         $('.modal__box label').click(function(){
           $('.low').removeClass('low').addClass('high')
         })
-        $('#s2Img').click(function(){
-          $('.imgModal').fadeIn()
+        $('.sModalBtn').click(function(){
+          var target = $(this).data('id');
+          $('.'+target).fadeIn()
         })
-        $('.imgModal .back').click(function(){
-          $('.imgModal').fadeOut()
+        $('.sModal .back').click(function(){
+          $(this).parents('.sModal').fadeOut();
         })
       })
     </script>
